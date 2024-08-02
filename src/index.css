@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'PoorRichard';
+    src: url(../public/fonts/PoorRichardOpti.otf);
+  }
+@font-face {
+    font-family: 'Poppins';
+    src: url(../public/fonts/Poppins-Regular.ttf);
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
