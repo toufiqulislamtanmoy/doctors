@@ -6,6 +6,7 @@ import {
   getAuth,
   GoogleAuthProvider,
   onAuthStateChanged,
+  sendPasswordResetEmail,
   signInWithEmailAndPassword,
   signInWithPopup,
   signOut,
@@ -17,10 +18,16 @@ const auth = getAuth(app);
 
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   const googleProvider = new GoogleAuthProvider();
-  // const facebookProvider = new FacebookAuthProvider();
+  const facebookProvider = new FacebookAuthProvider();
+
+  // login with facebook
+  const loginWithFacebook = () => {
+    setLoading(true);
+    return signInWithPopup(auth, facebookProvider);
+  };
 
   /**
    * Function for handling Google login
@@ -46,6 +53,12 @@ const AuthProvider = ({ children }) => {
     });
   };
 
+  // forgot password
+  const forgetPassword = (email) => {
+    setLoading(true);
+    return sendPasswordResetEmail(auth, email);
+}
+
 // Signup user via manual input end
 
   // Login user voia manual input
@@ -64,6 +77,7 @@ const AuthProvider = ({ children }) => {
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, currentUser => {
         setUser(currentUser);
+        setLoading(false);
         console.log("Current User From Auth Provider", currentUser);
     });
     return () => {
@@ -76,6 +90,8 @@ const authInfo = {
   loginUser,
   userLogOut,
   updateUserInFo,
+  forgetPassword,
+  loginWithFacebook,
   user,
   loading,
   loginWithGoogle,

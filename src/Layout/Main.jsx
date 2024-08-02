@@ -10,7 +10,7 @@ import { IoSettingsOutline } from "react-icons/io5";
 const Main = () => {
   const location = useLocation();
   return (
-    <div className="flex">
+    <div className="flex bg-[#EEF2F5]">
       {/* sidebar */}
       <aside className="hidden lg:block w-[300px] bg-white border-[1px] border-[#E7E7E7] min-h-screen lg:fixed top-0 ">
         {/* header section */}
@@ -23,10 +23,10 @@ const Main = () => {
         {/* list section */}
         <ul className="">
           <li
-            className={`w-full pl-6 py-3 hover:bg-[#D4E9FF] transition-colors duration-700 p-2 ${
+            className={`cursor-pointer w-full pl-6 py-3 hover:bg-[#D4E9FF] transition-colors duration-700 p-2 ${
               location.pathname === "/"
-                ? "bg-[#D4E9FF] border-l-[10px] border-[#102C4A] selected"
-                : "not-selected"
+                ? " bg-[#D4E9FF] border-l-[10px] border-[#102C4A]"
+                : ""
             }`}
           >
             <Link to="/" className="flex items-center gap-2 text-[#152A16]">
@@ -34,8 +34,8 @@ const Main = () => {
             </Link>
           </li>
           <li
-            className={`w-full pl-6 py-3 hover:bg-[#D4E9FF] transition-colors duration-700 p-2 ${
-              location.pathname === "/new-listing" ? "selected" : "not-selected"
+            className={`cursor-pointer w-full pl-6 py-3 hover:bg-[#D4E9FF] transition-colors duration-700 p-2 ${
+              location.pathname === "/new-listing" ? "bg-[#D4E9FF] border-l-[10px] border-[#102C4A]" : ""
             }`}
           >
             <Link
@@ -46,8 +46,8 @@ const Main = () => {
             </Link>
           </li>
           <li
-            className={`w-full pl-6 py-3 hover:bg-[#D4E9FF] transition-colors duration-700 p-2 ${
-              location.pathname === "/search" ? "selected" : "not-selected"
+            className={`cursor-pointer w-full pl-6 py-3 hover:bg-[#D4E9FF] transition-colors duration-700 p-2 ${
+              location.pathname === "/search" ? "bg-[#D4E9FF] border-l-[10px] border-[#102C4A]" : ""
             }`}
           >
             <Link
@@ -58,8 +58,8 @@ const Main = () => {
             </Link>
           </li>
           <li
-            className={`w-full pl-6 py-3 hover:bg-[#D4E9FF] transition-colors duration-700 p-2 ${
-              location.pathname === "/about" ? "selected" : "not-selected"
+            className={`cursor-pointer w-full pl-6 py-3 hover:bg-[#D4E9FF] transition-colors duration-700 p-2 ${
+              location.pathname === "/about" ? "bg-[#D4E9FF] border-l-[10px] border-[#102C4A]" : ""
             }`}
           >
             <Link
@@ -70,8 +70,8 @@ const Main = () => {
             </Link>
           </li>
           <li
-            className={`w-full pl-6 py-3 hover:bg-[#D4E9FF] transition-colors duration-700 p-2 ${
-              location.pathname === "/favorites" ? "selected" : "not-selected"
+            className={`cursor-pointer w-full pl-6 py-3 hover:bg-[#D4E9FF] transition-colors duration-700 p-2 ${
+              location.pathname === "/favorites" ? "bg-[#D4E9FF] border-l-[10px] border-[#102C4A]" : ""
             }`}
           >
             <Link
@@ -83,8 +83,8 @@ const Main = () => {
           </li>
           <div className="divider"></div>
           <li
-            className={`w-full pl-6 py-3 hover:bg-[#D4E9FF] transition-colors duration-700 p-2 ${
-              location.pathname === "/help-center" ? "selected" : "not-selected"
+            className={`cursor-pointer w-full pl-6 py-3 hover:bg-[#D4E9FF] transition-colors duration-700 p-2 ${
+              location.pathname === "/help-center" ? "bg-[#D4E9FF] border-l-[10px] border-[#102C4A]" : ""
             }`}
           >
             <Link
@@ -95,8 +95,8 @@ const Main = () => {
             </Link>
           </li>
           <li
-            className={`w-full pl-6 py-3 hover:bg-[#D4E9FF] transition-colors duration-700 p-2 ${
-              location.pathname === "/settings" ? "selected" : "not-selected"
+            className={`cursor-pointer w-full pl-6 py-3 hover:bg-[#D4E9FF] transition-colors duration-700 p-2 ${
+              location.pathname === "/settings" ? "bg-[#D4E9FF] border-l-[10px] border-[#102C4A]" : ""
             }`}
           >
             <Link

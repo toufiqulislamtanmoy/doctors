@@ -12,7 +12,8 @@ import Home from "../Pages/Home/Home";
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <Main/>,
+        element: <ProtectedRoute><Main/></ProtectedRoute>,
+        // element: <Main/>,
         // errorElement: <NotFound />,
         children: [
             {
