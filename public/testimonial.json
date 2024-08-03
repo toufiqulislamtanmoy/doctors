@@ -1,0 +1,45 @@
+[
+    {
+      "id": 1,
+      "address": "456 Maple Avenue, Los Angeles",
+      "title": "Rejuvenating Therapy by Alex",
+      "description": "Alex's rejuvenating therapy session was a breath of fresh air. Their skillful techniques and calming presence made for a truly remarkable experience. Alex's dedication to holistic healing is evident in every touch. Highly recommended for anyone seeking balance and relaxation.",
+      "img": "/public/testimonial1.png"
+    },
+    {
+      "id": 2,
+      "address": "789 Oak Street, Chicago",
+      "title": "Therapeutic Massage by Jamie",
+      "description": "Jamie provided a therapeutic massage that was both relaxing and healing. Their expertise in various techniques ensured a tailored experience that addressed all my needs. Jamie's attention to detail and soothing approach left me feeling renewed and revitalized. A must-try for anyone looking to unwind.",
+      "img": "/public/testimonial2.png"
+    },
+    {
+      "id": 3,
+      "address": "321 Pine Road, Houston",
+      "title": "Wellness Sessions by Taylor",
+      "description": "Taylor's wellness sessions are a true escape from the hustle and bustle of daily life. Their intuitive approach and gentle touch create an atmosphere of peace and tranquility. Taylor's ability to connect with their clients on a personal level makes each session unique and deeply restorative.",
+      "img": "/public/testimonial1.png"
+    },
+    {
+      "id": 4,
+      "address": "987 Cedar Boulevard, Phoenix",
+      "title": "Relaxing Massage by Jordan",
+      "description": "Jordan's relaxing massage was an oasis of calm. Their expert hands and serene environment melted away my stress and tension. Jordan's commitment to providing a personalized and soothing experience was evident throughout the session. A perfect choice for those looking to decompress.",
+      "img": "/public/testimonial1.png"
+    },
+    {
+      "id": 5,
+      "address": "654 Spruce Lane, Philadelphia",
+      "title": "Holistic Healing by Morgan",
+      "description": "Morgan's holistic healing approach combines traditional techniques with modern practices to deliver a deeply enriching experience. Their empathetic nature and skilled hands create a session that not only relaxes the body but also rejuvenates the spirit. Highly recommended for comprehensive well-being.",
+      "img": "/public/testimonial2.png"
+    },
+    {
+      "id": 6,
+      "address": "321 Birch Street, San Antonio",
+      "title": "Therapeutic Touch by Casey",
+      "description": "Casey's therapeutic touch is a blend of precision and care. Their ability to identify and address problem areas is impressive. Casey's sessions are a journey towards physical and mental relaxation, leaving clients feeling balanced and invigorated. An excellent choice for targeted therapeutic care.",
+      "img": "/public/testimonial1.png"
+    }
+  ]
+  

@@ -1,0 +1,108 @@
+[
+    {
+      "id": 1,
+      "city_name": "New York",
+      "url": "https://example.com/cities/new-york"
+    },
+    {
+      "id": 2,
+      "city_name": "Los Angeles",
+      "url": "https://example.com/cities/los-angeles"
+    },
+    {
+      "id": 3,
+      "city_name": "Chicago",
+      "url": "https://example.com/cities/chicago"
+    },
+    {
+      "id": 4,
+      "city_name": "Houston",
+      "url": "https://example.com/cities/houston"
+    },
+    {
+      "id": 5,
+      "city_name": "Phoenix",
+      "url": "https://example.com/cities/phoenix"
+    },
+    {
+      "id": 6,
+      "city_name": "Philadelphia",
+      "url": "https://example.com/cities/philadelphia"
+    },
+    {
+      "id": 7,
+      "city_name": "San Antonio",
+      "url": "https://example.com/cities/san-antonio"
+    },
+    {
+      "id": 8,
+      "city_name": "San Diego",
+      "url": "https://example.com/cities/san-diego"
+    },
+    {
+      "id": 9,
+      "city_name": "Dallas",
+      "url": "https://example.com/cities/dallas"
+    },
+    {
+      "id": 10,
+      "city_name": "San Jose",
+      "url": "https://example.com/cities/san-jose"
+    },
+    {
+        "id": 11,
+        "city_name": "Austin",
+        "url": "https://example.com/cities/austin"
+      },
+      {
+        "id": 12,
+        "city_name": "Jacksonville",
+        "url": "https://example.com/cities/jacksonville"
+      },
+      {
+        "id": 13,
+        "city_name": "Fort Worth",
+        "url": "https://example.com/cities/fort-worth"
+      },
+      {
+        "id": 14,
+        "city_name": "Columbus",
+        "url": "https://example.com/cities/columbus"
+      },
+      {
+        "id": 15,
+        "city_name": "San Francisco",
+        "url": "https://example.com/cities/san-francisco"
+      },
+      {
+        "id": 16,
+        "city_name": "Charlotte",
+        "url": "https://example.com/cities/charlotte"
+      },
+      {
+        "id": 17,
+        "city_name": "Indianapolis",
+        "url": "https://example.com/cities/indianapolis"
+      },
+      {
+        "id": 18,
+        "city_name": "Seattle",
+        "url": "https://example.com/cities/seattle"
+      },
+      {
+        "id": 19,
+        "city_name": "Denver",
+        "url": "https://example.com/cities/denver"
+      },
+      {
+        "id": 20,
+        "city_name": "Washington",
+        "url": "https://example.com/cities/washington"
+      },
+      {
+        "id": 21,
+        "city_name": "Boston",
+        "url": "https://example.com/cities/boston"
+      }
+  ]
+  
