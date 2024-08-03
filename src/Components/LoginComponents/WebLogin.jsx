@@ -32,11 +32,6 @@ const WebLogin = () => {
         const errorCode = error.code;
         const errorMessage = error.message;
         console.log("Error Message: ", errorMessage, "Error Code: ", errorCode);
-        Swal.fire({
-          icon: "error",
-          title: "Oops...",
-          text: "Something went wrong!",
-        });
       });
   };
 
@@ -53,11 +48,6 @@ const WebLogin = () => {
         const errorCode = error.code;
         const errorMessage = error.message;
         console.log("Error Message: ", errorMessage, "Error Code: ", errorCode);
-        Swal.fire({
-          icon: "error",
-          title: "Oops...",
-          text: "Something went wrong!",
-        });
       });
   };
   //   handel login with email
