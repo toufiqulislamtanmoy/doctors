@@ -4,6 +4,9 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { useContext, useEffect, useRef, useState } from "react";
 import { AuthContext } from "../../Providers/AuthProider";
 import { getTherapistData } from "../../Helper/TherapiestData";
+
+
+
 const FeaturedTherapist = () => {
   const sliderRef = useRef(null);
   const scrollAmount = 300;
@@ -39,11 +42,11 @@ const FeaturedTherapist = () => {
         Featured Therapist
       </h1>
 
-      <div className="bg-white rounded-[10px] relative lg:block hidden">
+      <div className="bg-white rounded-[10px] relative">
         {/* featured therapist slider left indicator */}
         {therapistData?.length > 0 && (
           <button
-            className="absolute left-10 top-1/2 -translate-y-1/2 bg-[#D4E9FF] p-3 rounded-full text-[#152A16]"
+            className="lg:block hidden absolute left-10 top-1/2 -translate-y-1/2 bg-[#D4E9FF] p-3 rounded-full text-[#152A16]"
             onClick={handlePrevClick}
           >
             <IoIosArrowBack />
@@ -52,7 +55,7 @@ const FeaturedTherapist = () => {
         {/* featured therapist slider card wrapper */}
         {therapistData?.length > 0 ? (
           <div
-            className="flex items-center justify-start max-w-[80%] mx-auto overflow-x-hidden scroll-smooth"
+            className="flex items-center justify-start max-w-[225px]  lg:max-w-[80%] mx-auto overflow-auto lg:overflow-x-hidden scroll-smooth"
             ref={sliderRef}
           >
             {therapistData?.map((therapist) => (
@@ -96,14 +99,14 @@ const FeaturedTherapist = () => {
         )}
 
         {/* featured therapist slider right indicator */}
-        { therapistData?.length > 0 &&
+        {therapistData?.length > 0 && (
           <button
-            className="absolute right-10 top-1/2 -translate-y-1/2 bg-[#D4E9FF] p-3 rounded-full text-[#152A16]"
+            className="lg:block hidden absolute right-10 top-1/2 -translate-y-1/2 bg-[#D4E9FF] p-3 rounded-full text-[#152A16]"
             onClick={handleNextClick}
           >
             <IoIosArrowForward />
           </button>
-        }
+        )}
       </div>
     </div>
   );
