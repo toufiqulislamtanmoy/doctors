@@ -1,7 +1,15 @@
 import { Link } from "react-router-dom";
 import heroImage from "../../assets/images/hero_image.png";
 import heroShade from "../../assets/images/hero_shade.png";
+import { AuthContext } from "../../Providers/AuthProider";
+import { useContext } from "react";
 const HeroSection = () => {
+  const {setSearchText}=useContext(AuthContext);
+
+  const handelSearchText=(e)=>{
+    e.preventDefault();
+    setSearchText(e.target.search.value);
+  }
   return (
     <div className="bg-white my-3 lg:m-[30px] lg:p-[30px] p-4 rounded-[10px]">
       {/* hero section wrapper */}
@@ -25,20 +33,21 @@ const HeroSection = () => {
             </p>
           </div>
           {/* search bar group */}
-          <div className="my-[30px] hidden lg:block">
+          <form onSubmit={(e)=>handelSearchText(e)} className="my-[30px] hidden lg:block">
             {/* search bar */}
             <div className="bg-[#EEF2F5] rounded-[10px] flex">
               <input
+                name="search"
                 type="text"
                 placeholder="ZIP code or city name "
                 className="focus:outline-none py-3 pl-5 w-full bg-transparent"
               />
               {/* search button */}
-              <button className="bg-[#156BCA] m-1 px-4 rounded-[10px] text-sm text-white ">
+              <button type="submit" className="bg-[#156BCA] m-1 px-4 rounded-[10px] text-sm text-white ">
                 Go
               </button>
             </div>
-          </div>
+          </form>
         </div>
         {/* hero section image */}
         <div className="relative">
@@ -52,10 +61,11 @@ const HeroSection = () => {
       </div>
 
       {/* search bar group */}
-      <div className="mt-10 lg:hidden block">
+      <form onSubmit={(e)=>handelSearchText(e)} className="mt-10 lg:hidden block">
         {/* search bar */}
         <div className="bg-[#EEF2F5] rounded-[10px] flex">
           <input
+            name="search"
             type="text"
             placeholder="ZIP code or city name "
             className="focus:outline-none py-3 pl-5 w-full bg-transparent"
@@ -65,7 +75,7 @@ const HeroSection = () => {
             Go
           </button>
         </div>
-      </div>
+      </form>
     </div>
   );
 };
