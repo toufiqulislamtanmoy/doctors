@@ -1,0 +1,211 @@
+[
+  {
+    "id": "1",
+    "name": "Michael Smith",
+    "address": {
+      "zip": "10001",
+      "city": "New York",
+      "street": "123 Elm Street"
+    },
+    "mobileAndInStudio": 3,
+    "imageUrl": "https://i.ibb.co/sJXh3D9/therapist1.png",
+    "specialties": [
+      "Cognitive Behavioral Therapy",
+      "Mindfulness",
+      "Stress Management"
+    ],
+    "yearsOfExperience": 10,
+    "phone": "555-1234",
+    "email": "michael.smith@example.com",
+    "languages": ["English", "Spanish"],
+    "availability": {
+      "monday": "9:00 AM - 5:00 PM",
+      "tuesday": "9:00 AM - 5:00 PM",
+      "wednesday": "9:00 AM - 5:00 PM",
+      "thursday": "9:00 AM - 5:00 PM",
+      "friday": "9:00 AM - 5:00 PM"
+    },
+    "bio": "Michael Smith is a seasoned therapist with a decade of experience in helping clients manage stress and develop mindfulness practices. He specializes in Cognitive Behavioral Therapy and works with clients both in-studio and via mobile services."
+  },
+  {
+    "id": "2",
+    "name": "Jane Doe",
+    "address": {
+      "zip": "94101",
+      "city": "San Francisco",
+      "street": "456 Maple Avenue"
+    },
+    "mobileAndInStudio": 2,
+    "imageUrl": "https://i.ibb.co/g37gxkq/therapist2.png",
+    "specialties": ["Family Therapy", "Couples Therapy", "Anxiety Disorders"],
+    "yearsOfExperience": 8,
+    "phone": "555-5678",
+    "email": "jane.doe@example.com",
+    "languages": ["English", "French"],
+    "availability": {
+      "monday": "10:00 AM - 6:00 PM",
+      "wednesday": "10:00 AM - 6:00 PM",
+      "friday": "10:00 AM - 6:00 PM"
+    },
+    "bio": "Jane Doe focuses on family and couples therapy, helping clients navigate complex relationships and anxiety disorders. With 8 years of experience, she offers her services in-studio in San Francisco."
+  },
+  {
+    "id": "3",
+    "name": "Emily Johnson",
+    "address": {
+      "zip": "60601",
+      "city": "Chicago",
+      "street": "789 Oak Street"
+    },
+    "mobileAndInStudio": 1,
+    "imageUrl": "https://i.ibb.co/QpvFMm6/therapist3.png",
+    "specialties": ["Child Therapy", "ADHD Management", "Behavioral Therapy"],
+    "yearsOfExperience": 5,
+    "phone": "555-8765",
+    "email": "emily.johnson@example.com",
+    "languages": ["English"],
+    "availability": {
+      "tuesday": "8:00 AM - 4:00 PM",
+      "thursday": "8:00 AM - 4:00 PM"
+    },
+    "bio": "Emily Johnson is dedicated to working with children, specializing in ADHD management and behavioral therapy. She provides mobile services to cater to the needs of her young clients."
+  },
+  {
+    "id": "4",
+    "name": "David Brown",
+    "address": {
+      "zip": "90001",
+      "city": "Los Angeles",
+      "street": "101 Pine Street"
+    },
+    "mobileAndInStudio": 3,
+    "imageUrl": "https://i.ibb.co/RC84wWP/therapist4.png",
+    "specialties": ["Grief Counseling", "Depression", "Trauma Recovery"],
+    "yearsOfExperience": 12,
+    "phone": "555-2345",
+    "email": "david.brown@example.com",
+    "languages": ["English"],
+    "availability": {
+      "monday": "9:00 AM - 5:00 PM",
+      "tuesday": "9:00 AM - 5:00 PM",
+      "wednesday": "9:00 AM - 5:00 PM"
+    },
+    "bio": "David Brown specializes in grief counseling, depression, and trauma recovery. With over a decade of experience, he offers both in-studio and mobile therapy sessions."
+  },
+  {
+    "id": "5",
+    "name": "Sophia Martinez",
+    "address": {
+      "zip": "75201",
+      "city": "Dallas",
+      "street": "202 Cedar Street"
+    },
+    "mobileAndInStudio": 2,
+    "imageUrl": "https://i.ibb.co/sJXh3D9/therapist1.png",
+    "specialties": ["Eating Disorders", "Self-Esteem Issues", "Body Image"],
+    "yearsOfExperience": 9,
+    "phone": "555-3456",
+    "email": "sophia.martinez@example.com",
+    "languages": ["English", "Spanish"],
+    "availability": {
+      "monday": "11:00 AM - 7:00 PM",
+      "thursday": "11:00 AM - 7:00 PM",
+      "saturday": "10:00 AM - 4:00 PM"
+    },
+    "bio": "Sophia Martinez is an expert in treating eating disorders and body image issues. She provides compassionate care in-studio, helping clients build self-esteem and develop healthier relationships with food."
+  },
+  {
+    "id": "6",
+    "name": "Liam Wilson",
+    "address": {
+      "zip": "30301",
+      "city": "Atlanta",
+      "street": "303 Birch Street"
+    },
+    "mobileAndInStudio": 1,
+    "imageUrl": "https://i.ibb.co/g37gxkq/therapist2.png",
+    "specialties": ["Anger Management", "Stress Relief", "Conflict Resolution"],
+    "yearsOfExperience": 7,
+    "phone": "555-4567",
+    "email": "liam.wilson@example.com",
+    "languages": ["English"],
+    "availability": {
+      "tuesday": "10:00 AM - 6:00 PM",
+      "friday": "10:00 AM - 6:00 PM"
+    },
+    "bio": "Liam Wilson helps clients manage anger, relieve stress, and resolve conflicts. He offers mobile therapy services to ensure convenience and flexibility for his clients."
+  },
+  {
+    "id": "7",
+    "name": "Emma Davis",
+    "address": {
+      "zip": "33101",
+      "city": "Miami",
+      "street": "404 Palm Street"
+    },
+    "mobileAndInStudio": 3,
+    "imageUrl": "https://i.ibb.co/QpvFMm6/therapist3.png",
+    "specialties": [
+      "Relationship Counseling",
+      "Life Transitions",
+      "Personal Growth"
+    ],
+    "yearsOfExperience": 15,
+    "phone": "555-5678",
+    "email": "emma.davis@example.com",
+    "languages": ["English", "Portuguese"],
+    "availability": {
+      "monday": "9:00 AM - 6:00 PM",
+      "wednesday": "9:00 AM - 6:00 PM",
+      "friday": "9:00 AM - 6:00 PM"
+    },
+    "bio": "Emma Davis has 15 years of experience in relationship counseling and personal growth. She offers both in-studio and mobile sessions, helping clients navigate life's transitions and improve their relationships."
+  },
+  {
+    "id": "8",
+    "name": "James Lee",
+    "address": {
+      "zip": "60602",
+      "city": "Chicago",
+      "street": "505 Oak Street"
+    },
+    "mobileAndInStudio": 2,
+    "imageUrl": "https://i.ibb.co/RC84wWP/therapist4.png",
+    "specialties": ["Career Counseling", "Work-Life Balance", "Goal Setting"],
+    "yearsOfExperience": 10,
+    "phone": "555-6789",
+    "email": "james.lee@example.com",
+    "languages": ["English", "Korean"],
+    "availability": {
+      "tuesday": "9:00 AM - 5:00 PM",
+      "thursday": "9:00 AM - 5:00 PM"
+    },
+    "bio": "James Lee specializes in career counseling and work-life balance. With 10 years of experience, he helps clients set and achieve their professional goals through in-studio sessions."
+  },
+  {
+    "id": "9",
+    "name": "Olivia Taylor",
+    "address": {
+      "zip": "98101",
+      "city": "Seattle",
+      "street": "606 Pine Street"
+    },
+    "mobileAndInStudio": 1,
+    "imageUrl": "https://i.ibb.co/sJXh3D9/therapist1.png",
+    "specialties": [
+      "Mental Health Counseling",
+      "Addiction Recovery",
+      "Mindfulness Training"
+    ],
+    "yearsOfExperience": 6,
+    "phone": "555-7890",
+    "email": "olivia.taylor@example.com",
+    "languages": ["English"],
+    "availability": {
+      "monday": "8:00 AM - 4:00 PM",
+      "wednesday": "8:00 AM - 4:00 PM",
+      "friday": "8:00 AM - 4:00 PM"
+    },
+    "bio": "Olivia Taylor provides mental health counseling and addiction recovery services. She focuses on mindfulness training and offers mobile therapy to support her clients' journeys to recovery."
+  }
+]

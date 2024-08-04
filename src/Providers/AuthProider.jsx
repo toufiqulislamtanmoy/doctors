@@ -19,6 +19,7 @@ const auth = getAuth(app);
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [searchText, setSearchText] = useState("");
 
   const googleProvider = new GoogleAuthProvider();
   const facebookProvider = new FacebookAuthProvider();
@@ -95,7 +96,8 @@ const authInfo = {
   user,
   loading,
   loginWithGoogle,
-  
+  setSearchText,
+  searchText,
 };
 
   return <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>;
