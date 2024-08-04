@@ -10,7 +10,7 @@ import { IoSettingsOutline } from "react-icons/io5";
 const Main = () => {
   const location = useLocation();
   return (
-    <div className="flex bg-[#EEF2F5]">
+    <div className="flex bg-[#EEF2F5] relative">
       {/* sidebar */}
       <aside className="hidden lg:block w-[300px] bg-white border-[1px] border-[#E7E7E7] min-h-screen lg:fixed top-0 ">
         {/* header section */}
@@ -108,7 +108,7 @@ const Main = () => {
           </li>
         </ul>
       </aside>
-      <section className="lg:flex-1 block lg:ml-[300px] ml-0">
+      <section className="lg:flex-1 block lg:ml-[300px] ml-0 ">
         <Navbar />
         <Outlet />
       </section>

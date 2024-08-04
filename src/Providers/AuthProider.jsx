@@ -20,6 +20,9 @@ const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
   const [searchText, setSearchText] = useState("");
+  const [detailsPopup, setDetailsPopup] = useState(false);
+  const [forgetPassPopup, setForgetPassPopup] = useState(false);
+  const [singleDetails, setSingleDetails] = useState({});
 
   const googleProvider = new GoogleAuthProvider();
   const facebookProvider = new FacebookAuthProvider();
@@ -98,6 +101,12 @@ const authInfo = {
   loginWithGoogle,
   setSearchText,
   searchText,
+  detailsPopup,
+  setDetailsPopup,
+  forgetPassPopup,
+  setForgetPassPopup,
+  setSingleDetails,
+  singleDetails,
 };
 
   return <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>;

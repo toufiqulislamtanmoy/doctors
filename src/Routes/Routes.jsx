@@ -3,10 +3,10 @@ import {
 } from "react-router-dom";
 import Main from "../Layout/Main";
 import ProtectedRoute from "./ProtectedRoute";
-import App from "../App";
 import Login from "../Pages/Login/Login";
 import SignUp from "../Pages/Signup/Signup";
 import Home from "../Pages/Home/Home";
+import AuthProtect from "./AuthProtect";
 
 
 const router = createBrowserRouter([
@@ -24,11 +24,11 @@ const router = createBrowserRouter([
     },
     {
         path:"/login",
-        element: <Login/>
+        element: <AuthProtect><Login/></AuthProtect>
     },
     {
         path:"/sign-up",
-        element: <SignUp/>
+        element: <AuthProtect><SignUp/></AuthProtect>
     }
     
 ]);

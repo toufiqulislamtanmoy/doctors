@@ -6,9 +6,10 @@ import facebook from "../../assets/icon/facebook.png";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../Providers/AuthProider";
 import { useForm } from "react-hook-form";
+import ForgetPassword from "./ForgetPassword";
 const WebLogin = () => {
   const [showPassword, setShowPassword] = useState(false);
-  const { loginWithGoogle,loginUser,loginWithFacebook } = useContext(AuthContext);
+  const { loginWithGoogle,loginUser,loginWithFacebook,setForgetPassPopup,forgetPassPopup } = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
   const destination = location.state?.from?.pathname || "/";
@@ -60,7 +61,7 @@ const WebLogin = () => {
     })
   };
   return (
-    <div className="hidden lg:flex min-h-screen items-center justify-around gap-10">
+    <div className="hidden lg:flex min-h-screen items-center justify-around gap-10 relative">
       {/* form input */}
       <div className="flex-1  ">
         <h1 className="text-[#4285F3] text-[40px] leading-10 font-PoorRichard">
@@ -150,7 +151,7 @@ const WebLogin = () => {
               </label>
             </div>
             {/* forgot password */}
-            <button className="text-[#4285F3] text-sm hover:underline transition-all duration-700">
+            <button type="button" onClick={() => setForgetPassPopup(true) } className="text-[#4285F3] text-sm hover:underline transition-all duration-700">
               Forgot password?
             </button>
           </div>
@@ -184,6 +185,9 @@ const WebLogin = () => {
           sliderMessage2={"to view all the massage therapists"}
         />
       </div>
+
+      {/* forget password popup */ }
+      {forgetPassPopup && <ForgetPassword />}
     </div>
   );
 };

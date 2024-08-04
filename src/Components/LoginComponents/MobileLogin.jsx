@@ -6,9 +6,10 @@ import bgImage from "../../assets/images/autth_landing.png";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa6";
 import { FcGoogle } from "react-icons/fc";
 import facebook from "../../assets/icon/facebook.png";
+import ForgetPassword from "./ForgetPassword";
 const MobileLogin = () => {
   const [showPassword, setShowPassword] = useState(false);
-  const { loginWithGoogle, loginUser, loginWithFacebook } =
+  const { loginWithGoogle, loginUser, loginWithFacebook,forgetPassPopup,setForgetPassPopup } =
     useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
@@ -165,7 +166,7 @@ const MobileLogin = () => {
                 </label>
               </div>
               {/* forgot password */}
-              <button className="text-[#4285F3] text-sm hover:underline transition-all duration-700">
+              <button type="button" onClick={() => setForgetPassPopup(true) } className="text-[#4285F3] text-sm hover:underline transition-all duration-700">
                 Forgot password?
               </button>
             </div>
@@ -182,17 +183,19 @@ const MobileLogin = () => {
           {/* footer  navigate to login page */}
           <div className="text-center mt-3 mb-6">
             <p className="text-[#152A16]">
-              Already have an account?{" "}
+              Don&#39; have an account?{" "}
               <Link
-                to="/login"
+                to="/sign-up"
                 className="text-[#4285F3] hover:underline transition-all duration-700"
               >
-                Log In
+                Create Account
               </Link>
             </p>
           </div>
         </div>
       </div>
+      {/* forget password popup */ }
+      {forgetPassPopup && <ForgetPassword />}
     </div>
   );
 };
